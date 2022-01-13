@@ -5,6 +5,8 @@
   /**
    * Easy selector helper function
    */
+   document.addEventListener('contextmenu', event => event.preventDefault());
+
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
