@@ -172,7 +172,7 @@ section {
 }
 
 .header .logo {
-  line-height: 0;
+  line-height: 1;
 }
 
 .header .logo img {
