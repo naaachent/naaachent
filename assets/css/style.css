@@ -482,7 +482,7 @@ section {
     text-align: center;
     margin-top: 80px;
   }
-  .hero .hero-img img {
+  .hero .hero-img iframe {
     width: 80%;
   }
 }
@@ -497,7 +497,7 @@ section {
   .hero h2 {
     font-size: 24px;
   }
-  .hero .hero-img img {
+  .hero .hero-img iframe {
     width: 100%;
   }
 }
