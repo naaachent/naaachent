@@ -25,13 +25,19 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body onload="storyCall()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -51,6 +57,7 @@
             <ul>
               <li><a href="https://wa.me/918867286918">WhatsApp US</a></li>
 			  <li><a href="http://m.me/naaachent">Facebook</a></li>
+			  <li><a href="#" id="yourstory" data-toggle="modal" data-target="#myModal">Your Story</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Join Us</a></li>
@@ -450,6 +457,33 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  
+  
+<div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Submit Your Story</h4>
+        </div>
+        <div class="modal-body">
+          <p>We at Naaach Entertainments appreciate the thought process of individuals inclusively. Let's celebrate the conscious process of storytelling. Submit your story (Facebook/WhatsApp/Email) and get exciting offers/awards from Naaach...</p>
+        </div>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success"><a style="color:white" href="mailto:naaach.entertainments@gmail.com">Send Your Story</a></button>
+      </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -464,6 +498,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  function storyCall(){
+	$('#yourstory').click();
+  }
+  </script>
 
 </body>
 
